@@ -1,16 +1,60 @@
+/* --- GENERAL RULES --- */
+:root {
+    --my-neutral-color :#e5e5e5;
+}
+
 .myWrapper {
     max-width: 100%;
     max-height: 100vh;
-
     min-width: 250px;
 }
 
+.testBox {
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.imgContainer > img {
+    width: 100%;
+}
+
+/* --- HEADER --- */
 header {
     width: 100vw;
-    
-    /* temp */
-    background-color: violet;
 }
+
+#navList {
+    list-style: none;
+}
+
+#navList li {
+    cursor: pointer;
+}
+
+.searchBarIconContainer {
+    background-color: var(--my-neutral-color);
+    cursor: pointer;
+}
+
+.searchBarInput {
+    background-color: var(--my-neutral-color);
+}
+
+.searchBarInput::placeholder {
+    font-size: 0.9rem;
+}
+
+#logoContainer img {
+    max-height: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 aside {
     /* temp */
@@ -25,8 +69,5 @@ main {
     /* height: 100px; */
 }
 
-.testBox {
-    height: 100px;
-    width: 100%;
-    background-color: aquamarine;
-}
+
+
