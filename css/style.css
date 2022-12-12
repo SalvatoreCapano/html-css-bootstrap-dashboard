@@ -1,5 +1,6 @@
 /* --- GENERAL RULES --- */
 :root {
+    --my-lighter-color: #f8f9fa;
     --my-neutral-color :#e5e5e5;
     --my-light-color: #1b72e8;
     --my-dark-color: #051e34;
@@ -10,12 +11,6 @@
     max-width: 100%;
     max-height: 100vh;
     min-width: 250px;
-}
-
-.testBox {
-    height: 100px;
-    width: 100%;
-    background-color: aquamarine;
 }
 
 .imgContainer > img {
@@ -44,16 +39,22 @@
     font-size: 0.8rem;
 }
 
+.classIconContainer {
+    max-width: 30px;
+}
+
+.classIconContainer img {
+    width: 100%;
+}
+
+.myBtnActions {
+    padding: 0.2rem 0.5rem;
+}
+
 /* --- HEADER --- */
 header {
     width: 100vw;
-
     height: 80px;
-
-    /* position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 50; */
 }
 
 #navList {
@@ -105,13 +106,23 @@ aside {
 main {
     max-height: calc(100vh - 80px);
     overflow-y: auto;
+    background-color: var(--my-lighter-color);
+}
 
-    /* temp */
-    background-color: burlywood;
+tr > *:first-child {
+    width: 35%;
 }
 
 .overview {
     background-color: var(--my-light-color);
+}
+
+.list-group-item img {
+    width: 100%;
+}
+
+.mySmallText {
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 576px){
