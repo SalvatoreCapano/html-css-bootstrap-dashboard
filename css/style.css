@@ -81,9 +81,6 @@ aside {
     cursor: pointer;
 }
 
-#sidebarList li > * {
-    vertical-align: middle;
-}
 
 /* main */
 main {
