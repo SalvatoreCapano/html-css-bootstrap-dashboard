@@ -1,7 +1,9 @@
 /* --- GENERAL RULES --- */
 :root {
     --my-neutral-color :#e5e5e5;
+    --my-light-color: #1b72e8;
     --my-dark-color: #051e34;
+    --my-badge-color: #165bba;
 }
 
 .myWrapper {
@@ -22,6 +24,24 @@
 
 .myDarkColor {
     background-color: var(--my-dark-color);
+}
+
+.myBtnColor {
+    color: white;
+    border-color: white;
+    font-weight: bolder;
+}
+
+.myBtnColor:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+
+.myBadge {
+    background-color: var(--my-badge-color);
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
 /* --- HEADER --- */
@@ -81,7 +101,6 @@ aside {
     cursor: pointer;
 }
 
-
 /* main */
 main {
     max-height: calc(100vh - 80px);
@@ -89,5 +108,20 @@ main {
 
     /* temp */
     background-color: burlywood;
-    /* height: 100px; */
+}
+
+.overview {
+    background-color: var(--my-light-color);
+}
+
+@media screen and (min-width: 576px){
+    .overview .row .myText {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .overview .row .myText {
+        font-size: 0.9rem;
+    }
 }
