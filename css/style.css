@@ -1,6 +1,7 @@
 /* --- GENERAL RULES --- */
 :root {
     --my-neutral-color :#e5e5e5;
+    --my-dark-color: #051e34;
 }
 
 .myWrapper {
@@ -17,6 +18,10 @@
 
 .imgContainer > img {
     width: 100%;
+}
+
+.myDarkColor {
+    background-color: var(--my-dark-color);
 }
 
 /* --- HEADER --- */
@@ -62,17 +67,25 @@ header {
     height: calc(100vh - 80px);
 }
 
-
+/* sidebar */
 aside {
     height: calc(100vh - 80px);
-
-    /* temp */
-    background-color: burlywood;
-    /* height: 100px; */
-    width: 100px;
-    /* height: 100%; */
 }
 
+#sidebarList {
+    list-style: none;
+    height: 100%;
+}
+
+#sidebarList li {
+    cursor: pointer;
+}
+
+#sidebarList li > * {
+    vertical-align: middle;
+}
+
+/* main */
 main {
     max-height: calc(100vh - 80px);
     overflow-y: auto;
