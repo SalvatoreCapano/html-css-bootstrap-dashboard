@@ -63,6 +63,10 @@
     display: none;
 }
 
+.mySmallText {
+    font-size: 0.9rem;
+}
+
 /* --- HEADER --- */
 header {
     width: 100vw;
@@ -95,7 +99,7 @@ header {
     cursor: pointer;
 }
 
-/* --- DASHBOARD */
+/* --- DASHBOARD ---*/
 .dashboard {
     height: calc(100vh - 80px);
 }
@@ -114,7 +118,6 @@ aside {
     cursor: pointer;
 }
 
-
 #sidebarList li:not(:last-child):hover,
 #sidebarList li:last-child div:hover {
     background-color: var(--my-gray-darker-color);
@@ -127,6 +130,10 @@ main {
     background-color: var(--my-gray-lighter-color);
 }
 
+.overview {
+    background-color: var(--my-light-color);
+}
+
 tr > *:first-child {
     width: 35%;
 }
@@ -135,26 +142,15 @@ tbody tr td {
     font-size: 0.95rem;
 }
 
-.overview {
-    background-color: var(--my-light-color);
-}
-
 .list-group-item img {
     width: 100%;
-}
-
-.mySmallText {
-    font-size: 0.9rem;
 }
 
 .myCustomOCWidth {
     width: 100vw !important;
 }
 
-@media screen and (max-width: 576px) {
-    
-}
-
+/* --- MEDIA QUERY --- */
 @media screen and (min-width: 576px){
     .overview .row .myText {
         font-size: 0.95rem;
