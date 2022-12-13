@@ -1,7 +1,8 @@
 /* --- GENERAL RULES --- */
 :root {
-    --my-lighter-color: #f8f9fa;
-    --my-neutral-color :#e5e5e5;
+    --my-gray-lighter-color: #f8f9fa;
+    --my-gray-dark-color :#e5e5e5;
+    --my-gray-darker-color: #b5b5b5;
     --my-light-color: #1b72e8;
     --my-dark-color: #051e34;
     --my-badge-color: #165bba;
@@ -51,6 +52,17 @@
     padding: 0.2rem 0.5rem;
 }
 
+.myDropdownReset,
+.myDropdownReset:hover,
+.myDropdownReset:active {
+    background: none !important;
+    border: none;
+}
+
+.myDropdownReset::after {
+    display: none;
+}
+
 /* --- HEADER --- */
 header {
     width: 100vw;
@@ -66,12 +78,12 @@ header {
 }
 
 .searchBarIconContainer {
-    background-color: var(--my-neutral-color);
+    background-color: var(--my-gray-dark-color);
     cursor: pointer;
 }
 
 .searchBarInput {
-    background-color: var(--my-neutral-color);
+    background-color: var(--my-gray-dark-color);
 }
 
 .searchBarInput::placeholder {
@@ -102,11 +114,17 @@ aside {
     cursor: pointer;
 }
 
+
+#sidebarList li:not(:last-child):hover,
+#sidebarList li:last-child div:hover {
+    background-color: var(--my-gray-darker-color);
+}
+
 /* main */
 main {
     max-height: calc(100vh - 80px);
     overflow-y: auto;
-    background-color: var(--my-lighter-color);
+    background-color: var(--my-gray-lighter-color);
 }
 
 tr > *:first-child {

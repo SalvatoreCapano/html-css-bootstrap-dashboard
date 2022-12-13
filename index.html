@@ -45,7 +45,7 @@
 
                     <div class="col-auto">
                         <nav>
-                            <ul id="navList" class="d-flex mb-0 ps-0 gap-sm-0 gap-lg-3">
+                            <ul id="navList" class="d-flex mb-0 ps-0 gap-sm-0 gap-lg-3 align-items-center">
                                 <li>
                                     <i class="bi bi-list-ul d-none d-lg-block"></i>
                                 </li>
@@ -59,7 +59,16 @@
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-bell-fill text-warning"></i>    
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle myDropdownReset" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-bell-fill text-warning"></i>    
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
 
@@ -80,23 +89,23 @@
                     <div class="col-auto myDarkColor px-lg-3">
                         <aside class="py-4 text-center">
                             <ul id="sidebarList" class="p-0 text-light d-flex flex-column">
-                                <li class="d-flex align-items-center mb-2 mx-2">
+                                <li class="d-flex align-items-center py-1 mx-2">
                                     <i class="bi bi-house-door-fill me-lg-2 fs-5"></i>
                                     <span class="sidebarItemLabel d-none d-lg-block">Home</span>
                                 </li>
                                     
-                                <li class="d-flex align-items-center mb-2 mx-2">
+                                <li class="d-flex align-items-center py-1 mx-2">
                                     <i class="bi bi-bar-chart-line-fill me-lg-2 fs-5"></i>
                                     <span class="sidebarItemLabel d-none d-lg-block">Stats</span>
                                 </li>
 
-                                <li class="d-flex align-items-center mb-2 mx-2">
+                                <li class="d-flex align-items-center py-1 mx-2">
                                     <i class="bi bi-reception-4 me-lg-2 fs-5"></i>
                                     <span class="sidebarItemLabel d-none d-lg-block">Signals</span>
                                 </li>
 
                                 <li class="d-flex align-items-end mx-2 flex-grow-1">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center py-1">
                                         <i class="bi bi-gear-fill me-lg-2 fs-5"></i>
                                         <span class="sidebarItemLabel d-none d-lg-block">Admin</span>
                                     </div>
