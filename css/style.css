@@ -131,6 +131,10 @@ tr > *:first-child {
     width: 35%;
 }
 
+tbody tr td {
+    font-size: 0.95rem;
+}
+
 .overview {
     background-color: var(--my-light-color);
 }
