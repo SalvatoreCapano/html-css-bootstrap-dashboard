@@ -143,9 +143,21 @@ tr > *:first-child {
     font-size: 0.9rem;
 }
 
+.myCustomOCWidth {
+    width: 100vw !important;
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
 @media screen and (min-width: 576px){
     .overview .row .myText {
         font-size: 0.95rem;
+    }
+
+    .myCustomOCWidth {
+        width: 50vw !important;
     }
 }
 
